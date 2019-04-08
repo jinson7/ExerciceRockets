@@ -5,19 +5,19 @@ import java.util.List;
 
 import domain.Rocket;
 
-public class CtrlRocket {
+public class RocketController {
 	
-	private static CtrlRocket ctrlRocketSingleton = null;
+	private static RocketController rocketSingletonController = null;
 	private List<Rocket> rockers;
 	
-	private CtrlRocket() {
+	private RocketController() {
 		rockers = new ArrayList<Rocket>();
 	}
 
-	public static CtrlRocket getInstance() {
-		if (ctrlRocketSingleton == null)
-			ctrlRocketSingleton = new CtrlRocket();
-		return ctrlRocketSingleton;
+	public static RocketController getInstance() {
+		if (rocketSingletonController == null)
+			rocketSingletonController = new RocketController();
+		return rocketSingletonController;
 	}
 
 

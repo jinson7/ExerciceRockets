@@ -1,12 +1,12 @@
 package main;
 
-import api.CtrlPresentation;
+import api.PresentationController;
 
 public class Main {
 	
 	public static void main(String[] args) {
 		
-		CtrlPresentation presentation = new CtrlPresentation();
+		PresentationController presentation = new PresentationController();
 		presentation.run();
 	}
 }
