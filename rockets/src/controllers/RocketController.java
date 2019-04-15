@@ -21,8 +21,8 @@ public class RocketController {
 	}
 
 
-	public void setRocket(String code, int propellers) {
-		rockers.add(new Rocket(code, propellers));
+	public void setRocket(String code, Integer... powerMaximOfPropellers) {
+		rockers.add(new Rocket(code, powerMaximOfPropellers));
 	}
 	
 	public String getAll() {
